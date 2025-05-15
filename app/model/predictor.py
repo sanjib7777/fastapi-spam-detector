@@ -4,8 +4,19 @@ import nltk
 from nltk.corpus import stopwords
 import string
 from nltk.stem.porter import PorterStemmer
-vectorizer = joblib.load(settings.vectorizer_path)
-model = joblib.load(settings.model_path)
+import os
+
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Load vectorizer
+vectorizer_path = os.path.join(BASE_DIR, 'vectorizer.pkl')
+vectorizer = joblib.load(vectorizer_path)
+
+# Load model
+model_path = os.path.join(BASE_DIR, 'model.pkl')
+model = joblib.load(model_path)
+
 
 ps = PorterStemmer()
 
