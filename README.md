@@ -79,6 +79,6 @@ pytest test/test_predict.py
   python -m nltk.downloader punkt stopwords
   ```
 
-
+![CI](https://github.com/sanjib7777/fastapi-spam-detector/actions/workflows/ci.yml/badge.svg)
 
   
