@@ -7,6 +7,11 @@ from nltk.stem.porter import PorterStemmer
 import os
 
 
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Load vectorizer
