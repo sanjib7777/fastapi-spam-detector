@@ -16,6 +16,6 @@ jobs:
           pip install -r requirements.txt
           pip install pytest
       - name: Download NLTK data
-        run: python -m nltk.downloader punkt
+        run: python -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab')"
       - name: Run tests
         run: pytest
