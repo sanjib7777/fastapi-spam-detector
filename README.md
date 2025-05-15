@@ -17,7 +17,7 @@ This project is a REST API microservice built with FastAPI that detects whether 
 1. Clone the repo:
 
    ```bash
-   git clone https://github.com/yourusername/fastapi-spam-detector.git
+   git clone https://github.com/sanjib7777/fastapi-spam-detector.git
    cd fastapi-spam-detector
    
 2. Create and activate a virtual environment:
@@ -51,6 +51,11 @@ This project is a REST API microservice built with FastAPI that detects whether 
 3. Access the API at:
   ```bash
   http://localhost:8000/docs
+```
+Or
+```bash
+docker pull sanjib7777/fastapi-spam-detector:latest
+docker run -p 8000:8000 sanjib7777/fastapi-spam-detector:latest
 ```
 ## How to Test
 1. Run automated tests with:
