@@ -7,10 +7,11 @@ from nltk.stem.porter import PorterStemmer
 import os
 
 
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
+for resource in ["punkt", "punkt_tab"]:
+    try:
+        nltk.data.find(f'tokenizers/{resource}')
+    except LookupError:
+        nltk.download(resource)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
