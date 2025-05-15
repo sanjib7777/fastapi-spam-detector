@@ -7,5 +7,6 @@ pydantic-settings==2.2.1
 # Optional tools for testing, linting, and dev workflow
 pytest==8.2.0
 flake8==7.0.0
+httpx
 nltk
 
